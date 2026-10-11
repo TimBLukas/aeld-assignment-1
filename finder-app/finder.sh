@@ -1,15 +1,12 @@
 #!/bin/bash
 
-
 if [ $# -ne 2 ]; then
 	echo "Usage: $0 <filesdir> <searchstr>"
 	exit 1
 fi
 
-
 filesdir="$1"
 searchstr="$2"
-
 
 if [ ! -d "$filesdir" ]; then
 	echo "Directory $filesdir does not exist"
